@@ -1,0 +1,26 @@
+{
+  "autoDiscoverCompanyWebsite": true,
+  "useReaderFallback": true,
+  "maxSearchQueries": 3,
+  "maxCandidates": 6,
+  "maxBridgePages": 3,
+  "maxItems": 2,
+  "rows": [
+    {
+      "jobId": "4431451933",
+      "jobUrl": "https://www.linkedin.com/jobs/view/4431451933",
+      "jobTitle": "Staff Product Manager",
+      "companyName": "GitHub",
+      "companyUrl": "https://www.linkedin.com/company/github",
+      "location": "Ontario, Canada"
+    },
+    {
+      "jobId": "4429363475",
+      "jobUrl": "https://www.linkedin.com/jobs/view/4429363475",
+      "jobTitle": "Senior Software Engineer",
+      "companyName": "GitHub",
+      "companyUrl": "https://www.linkedin.com/company/github",
+      "location": "United Kingdom"
+    }
+  ]
+}

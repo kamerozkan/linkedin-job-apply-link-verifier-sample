@@ -1,0 +1,102 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "LinkedIn Job Apply Link Verifier dataset record",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "sourceIndex",
+    "jobId",
+    "title",
+    "company",
+    "location",
+    "linkedinUrl",
+    "status",
+    "safeToPublish",
+    "reviewRequired",
+    "usefulClassification",
+    "confidence",
+    "evidence",
+    "checkedAt",
+    "original"
+  ],
+  "properties": {
+    "sourceIndex": {
+      "type": "integer"
+    },
+    "jobId": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "company": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "linkedinUrl": {
+      "type": "string",
+      "format": "uri"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "ACTIVE",
+        "AUTHORIZED_APPLY_ROUTE",
+        "LINKEDIN_EASY_APPLY",
+        "EXPIRED",
+        "SOURCE_MISMATCH",
+        "STATUS_CONFLICT",
+        "AMBIGUOUS"
+      ]
+    },
+    "actionUrl": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "uri"
+    },
+    "officialUrl": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "uri"
+    },
+    "safeToPublish": {
+      "type": "boolean"
+    },
+    "reviewRequired": {
+      "type": "boolean"
+    },
+    "usefulClassification": {
+      "type": "boolean"
+    },
+    "confidence": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "sourceProvider": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "checkedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "original": {
+      "type": "object"
+    }
+  }
+}

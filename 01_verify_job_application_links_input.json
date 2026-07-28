@@ -1,0 +1,23 @@
+{
+  "autoDiscoverCompanyWebsite": true,
+  "useReaderFallback": true,
+  "maxItems": 2,
+  "rows": [
+    {
+      "jobId": "4440290852",
+      "jobUrl": "https://www.linkedin.com/jobs/view/4440290852",
+      "jobTitle": "Staff Production Engineer",
+      "companyName": "GitHub",
+      "companyUrl": "https://www.linkedin.com/company/github",
+      "location": "United States"
+    },
+    {
+      "jobId": "4397632571",
+      "jobUrl": "https://www.linkedin.com/jobs/view/4397632571",
+      "jobTitle": "Principal Software Engineer",
+      "companyName": "GitHub",
+      "companyUrl": "https://www.linkedin.com/company/github",
+      "location": "United States"
+    }
+  ]
+}

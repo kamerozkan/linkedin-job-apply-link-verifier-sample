@@ -1,0 +1,42 @@
+{
+  "sourceIndex": 2,
+  "jobId": "4445263278",
+  "title": "Sr. Security Software Engineer, Vulnerability Management - Slack",
+  "company": "Slack",
+  "location": "San Francisco, CA",
+  "linkedinUrl": "https://www.linkedin.com/jobs/view/4445263278",
+  "status": "EXPIRED",
+  "actionUrl": null,
+  "officialUrl": null,
+  "safeToPublish": false,
+  "reviewRequired": false,
+  "usefulClassification": true,
+  "confidence": 0.95,
+  "sourceProvider": "workday",
+  "evidence": [
+    "linkedin_about_website_direct",
+    "linkedin_description_loaded",
+    "linkedin_apply_method:OFFSITE",
+    "verified_company_website_map",
+    "ats_link_on_career_page",
+    "official_site_inventory_miss:workday",
+    "workday_cxs_api:query=sr security software engineer vulnerability management slack",
+    "official_inventory_empty",
+    "search_results:7",
+    "verified_official_career_job_pages",
+    "complete_employer_owned_inventory_checked",
+    "complete_official_inventory_no_safe_match",
+    "expired_classification_without_url",
+    "search_candidates:13",
+    "trusted_candidates_checked:6"
+  ],
+  "checkedAt": "2026-07-28T12:41:12.862875+00:00",
+  "original": {
+    "jobId": "4445263278",
+    "jobUrl": "https://www.linkedin.com/jobs/view/4445263278",
+    "jobTitle": "Sr. Security Software Engineer, Vulnerability Management - Slack",
+    "companyName": "Slack",
+    "companyUrl": "https://www.linkedin.com/company/tiny-spec-inc",
+    "location": "San Francisco, CA"
+  }
+}

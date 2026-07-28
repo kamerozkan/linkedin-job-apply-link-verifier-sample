@@ -1,0 +1,26 @@
+{
+  "autoDiscoverCompanyWebsite": true,
+  "useReaderFallback": true,
+  "maxSearchQueries": 3,
+  "maxCandidates": 6,
+  "maxBridgePages": 3,
+  "maxItems": 2,
+  "rows": [
+    {
+      "jobId": "4432033614",
+      "jobUrl": "https://www.linkedin.com/jobs/view/4432033614",
+      "jobTitle": "Staff Software Engineer, Electron & Browser Infrastructure - Slack Desktop",
+      "companyName": "Slack",
+      "companyUrl": "https://www.linkedin.com/company/tiny-spec-inc",
+      "location": "California, United States"
+    },
+    {
+      "jobId": "4445263278",
+      "jobUrl": "https://www.linkedin.com/jobs/view/4445263278",
+      "jobTitle": "Sr. Security Software Engineer, Vulnerability Management - Slack",
+      "companyName": "Slack",
+      "companyUrl": "https://www.linkedin.com/company/tiny-spec-inc",
+      "location": "San Francisco, CA"
+    }
+  ]
+}
