@@ -1,0 +1,42 @@
+{
+  "status": "SUCCEEDED",
+  "rows": 2,
+  "statusCounts": {
+    "ACTIVE": 2
+  },
+  "usefulClassifications": 2,
+  "usefulClassificationRate": 1,
+  "safeToPublishRows": 2,
+  "safeToPublishRate": 1,
+  "reviewRequiredRows": 0,
+  "unsafeGuesses": 0,
+  "requests": 24,
+  "elapsedMs": 17712,
+  "generatedAt": "2026-09-25T07:50:48.035555+00:00",
+  "schemaVersion": "1.0",
+  "requestedRows": 2,
+  "budgetAcceptedRows": 2,
+  "deliveredRows": 2,
+  "invalidRows": 0,
+  "duplicateRowsDropped": 0,
+  "billing": {
+    "event": "verified-job",
+    "payPerEventActive": true,
+    "chargedOnlyWhenUseful": true,
+    "unresolvedRowsCharged": false,
+    "invalidOrDuplicateRowsCharged": false,
+    "reportEvent": "verification-report",
+    "reportEventPriced": false
+  },
+  "verificationReport": {
+    "requested": true,
+    "status": "STORED",
+    "event": "verification-report",
+    "billing": "UNPRICED_FREE",
+    "keys": [
+      "VERIFICATION_REPORT",
+      "VERIFICATION_REPORT.html",
+      "VERIFICATION_REPORT.txt"
+    ]
+  }
+}

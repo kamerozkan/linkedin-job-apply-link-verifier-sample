@@ -1,4 +1,4 @@
-> **Live API with ongoing maintenance:** [Run LinkedIn Job Apply Link Verifier on Apify](https://apify.com/kamerozkan/linkedin-job-apply-link-verifier)
+> **Live API:** [Run LinkedIn Job Apply Link Verifier on Apify](https://apify.com/kamerozkan/linkedin-job-apply-link-verifier)
 
 # LinkedIn Job Apply Link Verifier Samples
 
@@ -264,3 +264,19 @@ Review the source terms and laws that apply to your workflow. See
 
 Original documentation and schemas in this repository are available under the
 [MIT License](LICENSE). Third-party job data is outside that license.
+
+## Verified repair: 25 September 2026
+
+Build `0.0.21` (`WCeepAHlOQCnMdBGV`) is published as `latest`. The expired maintenance stop was removed. The repaired Actor delivered two useful, publishable decisions from two public job rows in a 23-second cloud run. The optional JSON, HTML and text reports were stored successfully and were uncharged because no report event is currently priced.
+
+- [Verification run](https://console.apify.com/actors/TW4QDjkomVJH1SPsd/runs/oeZDXtklRSve9DR5g)
+- [Runnable input](04_live_repair_input.json)
+- [Actual dataset output](04_live_repair_output.json)
+- [Run summary](04_live_repair_summary.json)
+- [Current input schema](input_schema.json)
+
+The expired 10-job maintenance cap was removed. The API default ceiling and maximum are 500 jobs; the Console prefill is 10. Search-query, candidate-page and bridge-page settings are now honored; conservative defaults are 1, 1 and 0. Start with a small batch because cold employers and public-source failures can make verification slow. A larger batch may require more time.
+
+The current FREE-tier rate is $0.005 per useful decision, with plan discounts. AMBIGUOUS, INVALID_INPUT and DUPLICATE_INPUT rows are uncharged; the optional report is currently included. Current live pricing in the Apify Console remains authoritative.
+
+These two checked jobs are dated evidence, not a promise of universal accuracy, availability, speed or profitability. Do not equate a successful run with an actionable URL: only publish routes with safeToPublish=true, and inspect reviewRequired, evidence and checkedAt.

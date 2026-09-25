@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "title": "Verify job apply routes",
+  "description": "Verify LinkedIn job rows, recover exact company apply URLs, and block expired, mismatched, or unproven routes.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "datasetId": {
+      "title": "Source job dataset",
+      "type": "string",
+      "description": "Read job rows directly from another Actor's dataset (any LinkedIn or job scraper). Common field names are detected automatically, no mapping needed. Leave empty when pasting rows below.",
+      "sectionCaption": "Jobs to verify",
+      "sectionDescription": "Choose a dataset or paste rows. The prefill is ready to run.",
+      "editor": "resourcePicker",
+      "resourceType": "dataset",
+      "resourcePermissions": [
+        "READ"
+      ]
+    },
+    "rows": {
+      "title": "Paste job rows instead",
+      "type": "array",
+      "description": "Paste job rows as JSON. Each row needs a LinkedIn job URL or ID plus title, company, and location. An existing applyUrl or company website is treated as a hint and re-verified, never trusted blindly.",
+      "editor": "json",
+      "maxItems": 500,
+      "prefill": [
+        {
+          "jobId": "4456275537",
+          "jobUrl": "https://www.linkedin.com/jobs/view/4456275537",
+          "jobTitle": "Senior Software Engineer, Copilot Agent Platform",
+          "companyName": "GitHub",
+          "companyUrl": "https://www.linkedin.com/company/github",
+          "location": "United States"
+        },
+        {
+          "jobId": "4451351698",
+          "jobUrl": "https://www.linkedin.com/jobs/view/4451351698",
+          "jobTitle": "Intermediate Support Engineer",
+          "companyName": "GitLab",
+          "companyUrl": "https://www.linkedin.com/company/gitlab-com",
+          "location": "Bengaluru, Karnataka, India"
+        }
+      ],
+      "items": {
+        "type": "object",
+        "additionalProperties": true
+      },
+      "minItems": 1
+    },
+    "maxItems": {
+      "title": "Maximum jobs to verify",
+      "type": "integer",
+      "description": "Maximum jobs to process, up to 500. Start with 10 for a quick check; large batches and deep searches take longer. API calls without this setting can process all supplied rows up to 500.",
+      "default": 500,
+      "minimum": 1,
+      "maximum": 500,
+      "prefill": 10
+    },
+    "autoDiscoverCompanyWebsite": {
+      "title": "Discover official company websites",
+      "type": "boolean",
+      "description": "Recommended on. Discovers the employer's official website from public evidence when the row lacks one; without it, unknown companies cannot be resolved to exact ATS routes and are held as AMBIGUOUS (free) instead of guessed.",
+      "default": true,
+      "sectionCaption": "Evidence settings",
+      "sectionDescription": "The defaults favor accuracy and refuse unsafe guesses."
+    },
+    "useReaderFallback": {
+      "title": "Use public page reader fallback",
+      "type": "boolean",
+      "description": "Recommended on. Uses a second public read path when the direct LinkedIn page is unavailable, recovering rows that would otherwise be held as AMBIGUOUS. No LinkedIn login or cookies are used either way.",
+      "default": true
+    },
+    "maxSearchQueries": {
+      "title": "Maximum search queries per unresolved job",
+      "type": "integer",
+      "description": "Upper bound on public search queries per row. Higher values improve recall on cold companies at the cost of run time; the default suits recurring feeds where most employers repeat.",
+      "default": 1,
+      "minimum": 1,
+      "maximum": 5,
+      "sectionCaption": "Advanced limits",
+      "sectionDescription": "Change these only when a difficult source needs deeper discovery."
+    },
+    "maxCandidates": {
+      "title": "Maximum candidate pages to prove",
+      "type": "integer",
+      "description": "Upper bound on candidate pages fetched per row. Every candidate must pass the full verification policy before it can become an output route; raising this raises recall and run time, never the risk of an unproven URL.",
+      "default": 1,
+      "minimum": 1,
+      "maximum": 12
+    },
+    "maxBridgePages": {
+      "title": "Maximum job mirrors to inspect",
+      "type": "integer",
+      "description": "Upper bound on job-mirror pages consulted per row. Mirrors may reveal an official outbound URL to verify, but a mirror itself can never become the published route.",
+      "default": 0,
+      "minimum": 0,
+      "maximum": 6
+    },
+    "includeVerificationReport": {
+      "title": "Generate batch verification report",
+      "type": "boolean",
+      "description": "Optional. Writes JSON, HTML and text verification reports to the run key-value store. Currently included at no additional event charge; OUTPUT.verificationReport records billing status.",
+      "default": false,
+      "sectionCaption": "Report",
+      "sectionDescription": "A forwardable summary of the batch, built from the delivered rows."
+    }
+  }
+}

@@ -1,7 +1,7 @@
 # Data notice
 
 The sample job rows and verification records in this repository were derived
-from public pages and successful Actor runs on 2026-07-28.
+from public pages and successful Actor runs on 2026-07-28. Files prefixed 04_ contain the public job input and verified output from 25 September 2026. No customer datasets or private customer runs are included.
 
 They are included only to document the input and output contract. Job
 availability, URLs, and status can change after the recorded `checkedAt` time.

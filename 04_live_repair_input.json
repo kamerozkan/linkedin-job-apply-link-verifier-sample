@@ -1,0 +1,21 @@
+{
+  "rows": [
+    {
+      "jobId": "4456275537",
+      "jobUrl": "https://www.linkedin.com/jobs/view/4456275537",
+      "jobTitle": "Senior Software Engineer, Copilot Agent Platform",
+      "companyName": "GitHub",
+      "companyUrl": "https://www.linkedin.com/company/github",
+      "location": "United States"
+    },
+    {
+      "jobId": "4451351698",
+      "jobUrl": "https://www.linkedin.com/jobs/view/4451351698",
+      "jobTitle": "Intermediate Support Engineer",
+      "companyName": "GitLab",
+      "companyUrl": "https://www.linkedin.com/company/gitlab-com",
+      "location": "Bengaluru, Karnataka, India"
+    }
+  ],
+  "includeVerificationReport": true
+}

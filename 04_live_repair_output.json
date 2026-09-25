@@ -1,0 +1,153 @@
+[
+  {
+    "sourceIndex": 0,
+    "jobId": "4456275537",
+    "title": "Senior Software Engineer, Copilot Agent Platform",
+    "company": "GitHub",
+    "location": "United States",
+    "linkedinUrl": "https://www.linkedin.com/jobs/view/4456275537",
+    "status": "ACTIVE",
+    "actionUrl": "https://www.github.careers/careers-home/jobs/5742?lang=en-us",
+    "officialUrl": "https://www.github.careers/careers-home/jobs/5742?lang=en-us",
+    "applyMethod": "OFFSITE",
+    "safeToPublish": true,
+    "reviewRequired": false,
+    "usefulClassification": true,
+    "confidence": 1,
+    "sourceProvider": "employer_site",
+    "evidence": [
+      "linkedin_about_website_direct",
+      "linkedin_description_loaded",
+      "linkedin_apply_method:OFFSITE",
+      "verified_company_website_map",
+      "ats_link_on_career_page",
+      "official_site_inventory_miss:icims",
+      "icims_public_search_inventory",
+      "icims_query:senior software engineer copilot agent platform",
+      "official_inventory_empty",
+      "search_results:7",
+      "company_branded_job_domain",
+      "company_identity_from_visible_title",
+      "company_identity_from_verified_domain",
+      "jobposting_jsonld",
+      "description_fingerprint:1.000",
+      "description_fingerprint_from_jobposting_jsonld",
+      "strict_title_and_company_match",
+      "verified_search_index_resolution",
+      "search_candidates:7",
+      "trusted_candidates_checked:1"
+    ],
+    "requestAccounting": {
+      "companyIdentityAndWebsite": 1,
+      "linkedinSource": 5,
+      "search": 1,
+      "candidateAndBridgePages": 1,
+      "total": 8
+    },
+    "companyWebsite": "https://github.com",
+    "searchQueries": [
+      "\"Senior Software Engineer, Copilot Agent Platform\" \"GitHub\" United States careers"
+    ],
+    "candidateProofs": [
+      {
+        "url": "https://www.github.careers/careers-home/jobs/5742?lang=en-us",
+        "final_url": "https://www.github.careers/careers-home/jobs/5742?lang=en-us",
+        "search_rank": 1,
+        "search_title": "Senior Software Engineer, Copilot Agent Platform in United ...",
+        "status": "ACTIVE",
+        "accepted": true,
+        "title_score": 1,
+        "company_score": 1,
+        "location_score": 1,
+        "description_score": 1,
+        "page_title": "Senior Software Engineer, Copilot Agent Platform in United States | GitHub, Inc.",
+        "page_company": "GitHub",
+        "page_location": "UNAVAILABLE, UNAVAILABLE, United States",
+        "provider": "employer_site",
+        "evidence": [
+          "company_branded_job_domain",
+          "company_identity_from_visible_title",
+          "company_identity_from_verified_domain",
+          "jobposting_jsonld",
+          "description_fingerprint:1.000",
+          "description_fingerprint_from_jobposting_jsonld",
+          "strict_title_and_company_match",
+          "verified_search_index_resolution"
+        ],
+        "requests": 1
+      }
+    ],
+    "checkedAt": "2026-09-25T07:50:31.148864+00:00",
+    "durationMs": 6289,
+    "original": {
+      "jobId": "4456275537",
+      "jobUrl": "https://www.linkedin.com/jobs/view/4456275537",
+      "jobTitle": "Senior Software Engineer, Copilot Agent Platform",
+      "companyName": "GitHub",
+      "companyUrl": "https://www.linkedin.com/company/github",
+      "location": "United States"
+    },
+    "schemaVersion": "1.0"
+  },
+  {
+    "sourceIndex": 1,
+    "jobId": "4451351698",
+    "title": "Intermediate Support Engineer",
+    "company": "GitLab",
+    "location": "Bengaluru, Karnataka, India",
+    "linkedinUrl": "https://www.linkedin.com/jobs/view/4451351698",
+    "status": "ACTIVE",
+    "actionUrl": "https://job-boards.greenhouse.io/gitlab/jobs/8687026002",
+    "officialUrl": "https://job-boards.greenhouse.io/gitlab/jobs/8687026002",
+    "applyMethod": "OFFSITE",
+    "safeToPublish": true,
+    "reviewRequired": false,
+    "usefulClassification": true,
+    "confidence": 0.97,
+    "sourceProvider": "greenhouse",
+    "evidence": [
+      "linkedin_about_website_direct",
+      "linkedin_description_loaded",
+      "linkedin_apply_method:OFFSITE",
+      "verified_company_website_map",
+      "career_page_without_supported_ats",
+      "official_site_inventory_miss:custom",
+      "custom_career_inventory_unavailable",
+      "official_sitemaps_scanned:4",
+      "sitemap_title_candidates:0",
+      "official_inventory_empty",
+      "search_results:7",
+      "ats_inventory_discovered_from_search",
+      "generic_board_resolved_to_exact_job",
+      "greenhouse_public_board_api",
+      "inventory_jobs:201",
+      "best_official_title:Intermediate Support Engineer",
+      "conservative_official_inventory_match",
+      "official_description_match:0.8180",
+      "location_variant_resolved_by_description"
+    ],
+    "requestAccounting": {
+      "companyIdentityAndWebsite": 1,
+      "linkedinSource": 14,
+      "search": 1,
+      "candidateAndBridgePages": 0,
+      "total": 16
+    },
+    "companyWebsite": "https://about.gitlab.com/",
+    "searchQueries": [
+      "\"Intermediate Support Engineer\" \"GitLab\" Bengaluru careers"
+    ],
+    "candidateProofs": [],
+    "checkedAt": "2026-09-25T07:50:38.106331+00:00",
+    "durationMs": 9929,
+    "original": {
+      "jobId": "4451351698",
+      "jobUrl": "https://www.linkedin.com/jobs/view/4451351698",
+      "jobTitle": "Intermediate Support Engineer",
+      "companyName": "GitLab",
+      "companyUrl": "https://www.linkedin.com/company/gitlab-com",
+      "location": "Bengaluru, Karnataka, India"
+    },
+    "schemaVersion": "1.0"
+  }
+]

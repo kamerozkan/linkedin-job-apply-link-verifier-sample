@@ -1,8 +1,100 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "LinkedIn Job Apply Link Verifier dataset record",
   "type": "object",
   "additionalProperties": true,
+  "properties": {
+    "sourceIndex": {
+      "type": "integer",
+      "title": "Source row"
+    },
+    "jobId": {
+      "type": "string",
+      "title": "Job ID"
+    },
+    "title": {
+      "type": "string",
+      "title": "Job title"
+    },
+    "company": {
+      "type": "string",
+      "title": "Company"
+    },
+    "location": {
+      "type": "string",
+      "title": "Location"
+    },
+    "linkedinUrl": {
+      "type": "string",
+      "title": "LinkedIn URL"
+    },
+    "status": {
+      "type": "string",
+      "title": "Decision",
+      "enum": [
+        "ACTIVE",
+        "AUTHORIZED_APPLY_ROUTE",
+        "LINKEDIN_EASY_APPLY",
+        "EXPIRED",
+        "SOURCE_MISMATCH",
+        "STATUS_CONFLICT",
+        "AMBIGUOUS",
+        "INVALID_INPUT",
+        "DUPLICATE_INPUT"
+      ]
+    },
+    "actionUrl": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "title": "Safe action URL"
+    },
+    "officialUrl": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "title": "Official URL"
+    },
+    "safeToPublish": {
+      "type": "boolean",
+      "title": "Safe to publish"
+    },
+    "reviewRequired": {
+      "type": "boolean",
+      "title": "Review required"
+    },
+    "usefulClassification": {
+      "type": "boolean",
+      "title": "Useful result"
+    },
+    "confidence": {
+      "type": "number",
+      "title": "Confidence"
+    },
+    "sourceProvider": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "title": "Source"
+    },
+    "evidence": {
+      "type": "array",
+      "title": "Evidence",
+      "items": {
+        "type": "string"
+      }
+    },
+    "checkedAt": {
+      "type": "string",
+      "title": "Checked at"
+    },
+    "original": {
+      "type": "object",
+      "title": "Original row"
+    }
+  },
   "required": [
     "sourceIndex",
     "jobId",
@@ -19,84 +111,5 @@
     "checkedAt",
     "original"
   ],
-  "properties": {
-    "sourceIndex": {
-      "type": "integer"
-    },
-    "jobId": {
-      "type": "string"
-    },
-    "title": {
-      "type": "string"
-    },
-    "company": {
-      "type": "string"
-    },
-    "location": {
-      "type": "string"
-    },
-    "linkedinUrl": {
-      "type": "string",
-      "format": "uri"
-    },
-    "status": {
-      "type": "string",
-      "enum": [
-        "ACTIVE",
-        "AUTHORIZED_APPLY_ROUTE",
-        "LINKEDIN_EASY_APPLY",
-        "EXPIRED",
-        "SOURCE_MISMATCH",
-        "STATUS_CONFLICT",
-        "AMBIGUOUS"
-      ]
-    },
-    "actionUrl": {
-      "type": [
-        "string",
-        "null"
-      ],
-      "format": "uri"
-    },
-    "officialUrl": {
-      "type": [
-        "string",
-        "null"
-      ],
-      "format": "uri"
-    },
-    "safeToPublish": {
-      "type": "boolean"
-    },
-    "reviewRequired": {
-      "type": "boolean"
-    },
-    "usefulClassification": {
-      "type": "boolean"
-    },
-    "confidence": {
-      "type": "number",
-      "minimum": 0,
-      "maximum": 1
-    },
-    "sourceProvider": {
-      "type": [
-        "string",
-        "null"
-      ]
-    },
-    "evidence": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
-    },
-    "checkedAt": {
-      "type": "string",
-      "format": "date-time"
-    },
-    "original": {
-      "type": "object"
-    }
-  }
+  "title": "LinkedIn job apply-link verification record"
 }
