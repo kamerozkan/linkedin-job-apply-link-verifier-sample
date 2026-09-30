@@ -1,6 +1,10 @@
 > **Live API:** [Run LinkedIn Job Apply Link Verifier on Apify](https://apify.com/kamerozkan/linkedin-job-apply-link-verifier)
 
-# LinkedIn Job Apply Link Verifier Samples
+# LinkedIn Ghost Job Detector & Apply Link Verifier: Samples
+
+Ghost job detector and apply-link verifier for LinkedIn job rows: recovers the exact official application link, flags ghost, expired and mismatched listings, blocks unverified rows before they reach your job board, and can end each run with a verification report. No LinkedIn login or cookies.
+
+[Run LinkedIn Ghost Job Detector & Apply Link Verifier on Apify](https://apify.com/kamerozkan/linkedin-job-apply-link-verifier)
 
 [![Run on Apify](https://img.shields.io/badge/Run_on_Apify-LinkedIn_Job_Verifier-8948FF?logo=apify&logoColor=white)](https://apify.com/kamerozkan/linkedin-job-apply-link-verifier)
 ![Output](https://img.shields.io/badge/Output-JSON-1f6feb)

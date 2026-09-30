@@ -1,0 +1,15 @@
+{
+  "id": "TW4QDjkomVJH1SPsd",
+  "name": "linkedin-job-apply-link-verifier",
+  "title": "LinkedIn Ghost Job Detector & Apply Link Verifier",
+  "description": "Ghost job detector and apply-link verifier for LinkedIn job rows: recovers the exact official application link, flags ghost, expired and mismatched listings, blocks unverified rows before they reach your job board, and can end each run with a verification report. No LinkedIn login or cookies.",
+  "seoTitle": "LinkedIn Ghost Job Detector & Apply Link Verifier",
+  "seoDescription": "Check LinkedIn job rows for expired, mismatched or unverified listings. Recover official apply URLs and export a verification report without login.",
+  "isPublic": true,
+  "url": "https://apify.com/kamerozkan/linkedin-job-apply-link-verifier",
+  "checkedAt": "2026-09-30",
+  "changeScope": "listing metadata and sample documentation only",
+  "runtimeChanged": false,
+  "schemasChanged": false,
+  "examplesRegenerated": false
+}
