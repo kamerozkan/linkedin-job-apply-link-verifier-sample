@@ -1,0 +1,43 @@
+{
+  "status": "SUCCEEDED",
+  "rows": 2,
+  "statusCounts": {
+    "ACTIVE": 1,
+    "LINKEDIN_EASY_APPLY": 1
+  },
+  "usefulClassifications": 2,
+  "usefulClassificationRate": 1,
+  "safeToPublishRows": 2,
+  "safeToPublishRate": 1,
+  "reviewRequiredRows": 0,
+  "unsafeGuesses": 0,
+  "requests": 8,
+  "elapsedMs": 5756,
+  "generatedAt": "2026-09-30T21:16:06.228292+00:00",
+  "schemaVersion": "1.0",
+  "requestedRows": 4,
+  "budgetAcceptedRows": 2,
+  "deliveredRows": 4,
+  "invalidRows": 1,
+  "duplicateRowsDropped": 1,
+  "billing": {
+    "event": "verified-job",
+    "payPerEventActive": true,
+    "chargedOnlyWhenUseful": true,
+    "unresolvedRowsCharged": false,
+    "invalidOrDuplicateRowsCharged": false,
+    "reportEvent": "verification-report",
+    "reportEventPriced": false
+  },
+  "verificationReport": {
+    "requested": true,
+    "status": "STORED",
+    "event": "verification-report",
+    "billing": "UNPRICED_FREE",
+    "keys": [
+      "VERIFICATION_REPORT",
+      "VERIFICATION_REPORT.html",
+      "VERIFICATION_REPORT.txt"
+    ]
+  }
+}

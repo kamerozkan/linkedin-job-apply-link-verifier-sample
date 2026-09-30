@@ -1,0 +1,27 @@
+{
+  "observedAt": "2026-09-30T21:16:07.107Z",
+  "actorBuildNumber": "0.0.21",
+  "actorBuildId": "WCeepAHlOQCnMdBGV",
+  "runId": "C0quAeIt8R4A3OvZw",
+  "validUniqueJobs": 2,
+  "datasetRowsIncludingDiagnostics": 4,
+  "usefulDecisions": 2,
+  "publishableDecisions": 2,
+  "invalidRows": 1,
+  "duplicateRows": 1,
+  "chargedUsefulEventCounts": {
+    "verified-job": 2
+  },
+  "accountedOwnerEventCounts": {
+    "verified-job": 0
+  },
+  "ownerTestIsCustomerRevenue": false,
+  "reportDeliveredUnpriced": true,
+  "requests": 8,
+  "inputFile": "05_current_billing_validation_input.json",
+  "outputFile": "05_current_billing_validation_output.json",
+  "summaryFile": "05_current_billing_validation_summary.json",
+  "runtimeChanged": false,
+  "sampleContainsCustomerData": false,
+  "scope": "Small owner-started public-source sample with default 1-query/1-candidate/0-bridge limits; no universal availability or profitability claim."
+}

@@ -16,6 +16,23 @@ or unproven job rows before they reach a job board or recruiting workflow.
 This Actor verifies job rows you already have. It is not a LinkedIn scraper and
 does not require LinkedIn cookies, credentials, or a browser profile.
 
+## Build a safe job-board handoff
+
+The handoff documentation release `0.0.22` was checked with the same genuine input: two useful and publishable decisions, two unbillable diagnostic rows, and two charged events. It changes only the Actor README. [New release verification](workflow-release-2026-09-30.json).
+
+Run a small collected-job batch first, publish only rows with `safeToPublish: true`, and keep ambiguous or invalid rows in your review queue. See [the two genuine jobs plus duplicate/invalid input](05_current_billing_validation_input.json), [all four exported records](05_current_billing_validation_output.json) and [the run summary](05_current_billing_validation_summary.json).
+
+On September 30, 2026, owner run `C0quAeIt8R4A3OvZw` on build `0.0.21` returned one `ACTIVE` route and one `LINKEDIN_EASY_APPLY` route. The duplicate and invalid records were unbillable, and exactly two useful decisions were charged. The optional report was stored and unpriced. These are dated public-source test results, not realized revenue or a guarantee for other employers.
+
+To audit your own exported run metadata, full dataset and OUTPUT together:
+
+```bash
+python3 analyze_run.py --run run-export.json --rows dataset-export.json \
+  --output OUTPUT.json --scenario-event-price 0.0045 --save audit.json
+```
+
+`0.0045` is an explicit hypothetical price matching the checked BRONZE event price on September 30, 2026; replace it after checking live pricing. The helper rejects conflicting useful/charge counters and unsafe publication flags. It separates observed owner usage from hypothetical paid contribution, and leaves realized customer revenue unknown. `OUTPUT.rows` can exclude invalid/duplicate diagnostic records, so use the complete dataset count. Only Apify Insights or payout evidence establishes account revenue. [Apify pricing and cost calculation](https://docs.apify.com/actors/publishing/monetize/pricing-and-costs).
+
 ## What it returns
 
 | Input problem | Verified decision |

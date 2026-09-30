@@ -1,0 +1,38 @@
+{
+  "rows": [
+    {
+      "id": "4471886847",
+      "url": "https://www.linkedin.com/jobs/view/4471886847",
+      "title": "Software Engineer - Java Platform",
+      "companyName": "Snowflake",
+      "companyUrl": "https://www.linkedin.com/company/snowflake-computing",
+      "location": "Berlin, Berlin, Germany"
+    },
+    {
+      "id": "4435388308",
+      "url": "https://www.linkedin.com/jobs/view/4435388308",
+      "title": "Senior Software Engineer - Clearing",
+      "companyName": "Alpaca",
+      "companyUrl": "https://www.linkedin.com/company/alpacamarkets",
+      "location": "Berlin, Berlin, Germany"
+    },
+    {
+      "id": "4471886847",
+      "url": "https://www.linkedin.com/jobs/view/4471886847",
+      "title": "Software Engineer - Java Platform",
+      "companyName": "Snowflake",
+      "companyUrl": "https://www.linkedin.com/company/snowflake-computing",
+      "location": "Berlin, Berlin, Germany"
+    },
+    {
+      "title": "Input validation example without job identity"
+    }
+  ],
+  "maxItems": 4,
+  "includeVerificationReport": true,
+  "autoDiscoverCompanyWebsite": true,
+  "useReaderFallback": true,
+  "maxSearchQueries": 1,
+  "maxCandidates": 1,
+  "maxBridgePages": 0
+}

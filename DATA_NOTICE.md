@@ -16,6 +16,10 @@ redistributing job information.
 Do not submit credentials, private candidate information, resumes, application
 data, or non-public employer information to the public examples.
 
-## Listing update on September 30, 2026
+## Earlier listing update on September 30, 2026
 
 The Store title, description and search metadata were checked against the owned Actor and synchronized with this repository. This documentation update does not alter executable code, input or output schemas, recorded test outputs, artifact hashes, billing or runtime builds. Existing examples retain their original dates and validation limits. A public listing is not evidence of successful output, network acceptance or an achieved search ranking.
+
+## Current verifier handoff validation
+
+Files prefixed `05_` and `verification-2026-09-30.json` contain two public jobs collected by an owner-started Jobs run on September 30, 2026, plus an explicit duplicate and invalid diagnostic input. Exported examples omit full descriptions, original input payloads, account identity, private datasets, and platform-cost snapshots. Current route availability can change after the recorded times. `analyze_run.py` is a local offline audit helper; it does not change the Actor, create runs, send data or infer realized customer revenue. The earlier listing-only statement applies to that earlier update.

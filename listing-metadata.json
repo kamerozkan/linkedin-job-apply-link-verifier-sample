@@ -11,5 +11,11 @@
   "changeScope": "listing metadata and sample documentation only",
   "runtimeChanged": false,
   "schemasChanged": false,
-  "examplesRegenerated": false
+  "examplesRegenerated": false,
+  "sampleWorkflow": {
+    "name": "safe-job-board-handoff",
+    "checkedAt": "2026-09-30T21:16:07.107Z",
+    "entrypoint": "analyze_run.py",
+    "evidence": "verification-2026-09-30.json"
+  }
 }

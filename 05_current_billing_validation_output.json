@@ -1,0 +1,133 @@
+[
+  {
+    "sourceIndex": 2,
+    "jobId": "4471886847",
+    "title": "Software Engineer - Java Platform",
+    "company": "Snowflake",
+    "location": "Berlin, Berlin, Germany",
+    "linkedinUrl": "https://www.linkedin.com/jobs/view/4471886847",
+    "status": "DUPLICATE_INPUT",
+    "actionUrl": null,
+    "officialUrl": null,
+    "applyMethod": "UNKNOWN",
+    "safeToPublish": false,
+    "reviewRequired": true,
+    "usefulClassification": false,
+    "confidence": 0,
+    "sourceProvider": null,
+    "evidence": [
+      "duplicate_job_id:4471886847"
+    ],
+    "requestAccounting": {
+      "companyIdentityAndWebsite": 0,
+      "linkedinSource": 0,
+      "search": 0,
+      "candidateAndBridgePages": 0,
+      "total": 0
+    },
+    "checkedAt": "2026-09-30T21:16:00.375296+00:00",
+    "schemaVersion": "1.0"
+  },
+  {
+    "sourceIndex": 3,
+    "jobId": "",
+    "title": "Input validation example without job identity",
+    "company": "",
+    "location": "",
+    "linkedinUrl": "",
+    "status": "INVALID_INPUT",
+    "actionUrl": null,
+    "officialUrl": null,
+    "applyMethod": "UNKNOWN",
+    "safeToPublish": false,
+    "reviewRequired": true,
+    "usefulClassification": false,
+    "confidence": 0,
+    "sourceProvider": null,
+    "evidence": [
+      "invalid_input:row 3: missing required fields: job_id, linkedin_url, company, location"
+    ],
+    "requestAccounting": {
+      "companyIdentityAndWebsite": 0,
+      "linkedinSource": 0,
+      "search": 0,
+      "candidateAndBridgePages": 0,
+      "total": 0
+    },
+    "checkedAt": "2026-09-30T21:16:00.375336+00:00",
+    "schemaVersion": "1.0"
+  },
+  {
+    "sourceIndex": 0,
+    "jobId": "4471886847",
+    "title": "Software Engineer - Java Platform",
+    "company": "Snowflake",
+    "location": "Berlin, Berlin, Germany",
+    "linkedinUrl": "https://www.linkedin.com/jobs/view/4471886847",
+    "status": "ACTIVE",
+    "actionUrl": "https://jobs.ashbyhq.com/snowflake/23c94498-23c8-4d6e-a1d8-4355bf605663",
+    "officialUrl": "https://jobs.ashbyhq.com/snowflake/23c94498-23c8-4d6e-a1d8-4355bf605663",
+    "applyMethod": "OFFSITE",
+    "safeToPublish": true,
+    "reviewRequired": false,
+    "usefulClassification": true,
+    "confidence": 1,
+    "sourceProvider": "phenom",
+    "evidence": [
+      "linkedin_about_website_direct",
+      "linkedin_description_loaded",
+      "linkedin_apply_method:OFFSITE",
+      "verified_company_website_map",
+      "career_redirected_to_ats",
+      "official_site_to_career_source_verified",
+      "generic_board_resolved_to_exact_job",
+      "phenom_server_rendered_search",
+      "phenom_query_hits:296",
+      "inventory_jobs:10",
+      "best_official_title:Software Engineer - Java Platform",
+      "conservative_official_inventory_match"
+    ],
+    "requestAccounting": {
+      "companyIdentityAndWebsite": 1,
+      "linkedinSource": 5,
+      "search": 0,
+      "candidateAndBridgePages": 0,
+      "total": 6
+    },
+    "checkedAt": "2026-09-30T21:16:01.456210+00:00",
+    "schemaVersion": "1.0"
+  },
+  {
+    "sourceIndex": 1,
+    "jobId": "4435388308",
+    "title": "Senior Software Engineer - Clearing",
+    "company": "Alpaca",
+    "location": "Berlin, Berlin, Germany",
+    "linkedinUrl": "https://www.linkedin.com/jobs/view/4435388308",
+    "status": "LINKEDIN_EASY_APPLY",
+    "actionUrl": "https://www.linkedin.com/jobs/view/4435388308",
+    "officialUrl": null,
+    "applyMethod": "LINKEDIN_EASY_APPLY",
+    "safeToPublish": true,
+    "reviewRequired": false,
+    "usefulClassification": true,
+    "confidence": 1,
+    "sourceProvider": "linkedin",
+    "evidence": [
+      "linkedin_about_website_direct",
+      "linkedin_description_loaded",
+      "linkedin_apply_method:LINKEDIN_EASY_APPLY",
+      "no_external_official_url_expected",
+      "actionable_linkedin_apply_route"
+    ],
+    "requestAccounting": {
+      "companyIdentityAndWebsite": 1,
+      "linkedinSource": 1,
+      "search": 0,
+      "candidateAndBridgePages": 0,
+      "total": 2
+    },
+    "checkedAt": "2026-09-30T21:16:06.096022+00:00",
+    "schemaVersion": "1.0"
+  }
+]

@@ -1,0 +1,25 @@
+{
+  "actorBuildNumber": "0.0.22",
+  "actorBuildId": "QhDxelhMAEEg9Ja5F",
+  "runId": "Sd6IAPRBA8tp6VUh5",
+  "observedFinishedAt": "2026-09-30T21:24:57.297Z",
+  "platformStatus": "SUCCEEDED",
+  "outputStatus": "SUCCEEDED",
+  "datasetRowsIncludingDiagnostics": 4,
+  "usefulDecisions": 2,
+  "publishableDecisions": 2,
+  "unbillableInvalidAndDuplicateRows": 2,
+  "chargedEventCounts": {
+    "verified-job": 2
+  },
+  "accountedOwnerEventCounts": {
+    "verified-job": 0
+  },
+  "reportStoredUnpriced": true,
+  "requests": 8,
+  "readmeOnlyChange": true,
+  "runtimeAndSchemasUnchanged": true,
+  "pricingUnchanged": true,
+  "auditTestsPassed": 6,
+  "ownerTestIsCustomerRevenue": false
+}
