@@ -33,6 +33,14 @@ python3 analyze_run.py --run run-export.json --rows dataset-export.json \
 
 `0.0045` is an explicit hypothetical price matching the checked BRONZE event price on September 30, 2026; replace it after checking live pricing. The helper rejects conflicting useful/charge counters and unsafe publication flags. It separates observed owner usage from hypothetical paid contribution, and leaves realized customer revenue unknown. `OUTPUT.rows` can exclude invalid/duplicate diagnostic records, so use the complete dataset count. Only Apify Insights or payout evidence establishes account revenue. [Apify pricing and cost calculation](https://docs.apify.com/actors/publishing/monetize/pricing-and-costs).
 
+## Verify a new-job feed without repeating old inputs
+
+The [Jobs sample's offline handoff helper](https://github.com/kamerozkan/linkedin-jobs-scraper-sample#verify-only-newly-delivered-jobs) now prepares verification input from a READY batch's `new-jobs.json`, preserving the collector's local new-job filter. Passing the original full `datasetId` into the Verifier does not carry that local filter and can reprocess previously seen jobs.
+
+After one verification run you choose to start, the helper checks its exact saved input and exported decisions against the prepared request. It preserves the source job content in local files and produces separate JSON/CSV publication and review queues. `EXPIRED`, uncertain, mismatched and review-required decisions stay held even when a decision is useful or billable. A valid Easy Apply route may have `officialUrl:null`; inspect `actionUrl`, `safeToPublish`, `reviewRequired`, status and `checkedAt` together.
+
+[Try the entirely offline synthetic demonstration](https://github.com/kamerozkan/linkedin-jobs-scraper-sample/blob/main/examples/verified-feed-synthetic-demo/NOTICE.md) without a token or a paid run. Its invented two-publishable/one-expired result is not real availability evidence. [October 1 preparation and test proof](https://github.com/kamerozkan/linkedin-jobs-scraper-sample/blob/main/verified-feed-verification-2026-10-01.json) separates replay of genuine older source batches from synthetic merging. A new matched live end-to-end run was not made; neither helper publishes to an external job board or changes the Actor runtime, price or billing.
+
 ## What it returns
 
 | Input problem | Verified decision |

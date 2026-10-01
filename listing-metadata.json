@@ -17,5 +17,18 @@
     "checkedAt": "2026-09-30T21:16:07.107Z",
     "entrypoint": "analyze_run.py",
     "evidence": "verification-2026-09-30.json"
+  },
+  "newJobVerificationWorkflow": {
+    "addedOn": "2026-10-01",
+    "helperRepository": "https://github.com/kamerozkan/linkedin-jobs-scraper-sample",
+    "helper": "verified_job_feed.py",
+    "mode": "offline prepare and merge",
+    "localTestsPassed": 29,
+    "bundledDemoIsSynthetic": true,
+    "matchedNewLiveEndToEndVerified": false,
+    "startsOrChargesActors": false,
+    "publishesExternally": false,
+    "actorRuntimeChanged": false,
+    "actorPricingChanged": false
   }
 }

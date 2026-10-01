@@ -23,3 +23,7 @@ The Store title, description and search metadata were checked against the owned 
 ## Current verifier handoff validation
 
 Files prefixed `05_` and `verification-2026-09-30.json` contain two public jobs collected by an owner-started Jobs run on September 30, 2026, plus an explicit duplicate and invalid diagnostic input. Exported examples omit full descriptions, original input payloads, account identity, private datasets, and platform-cost snapshots. Current route availability can change after the recorded times. `analyze_run.py` is a local offline audit helper; it does not change the Actor, create runs, send data or infer realized customer revenue. The earlier listing-only statement applies to that earlier update.
+
+## New-job feed handoff documentation on October 1, 2026
+
+This repository links to a separate local helper in the Jobs sample. The helper prepares only READY new-job artifacts and requires matching saved verification input before joining exported decisions. It performs no network access, Actor invocation, billing or external publication. Full job content and review queues should remain private. The linked demonstration is wholly synthetic and separate from dated real source replay observations. A newly matched live end-to-end run has not been verified; existing Actor runtime, schemas, prices and earlier public outputs are unchanged.
