@@ -11,7 +11,7 @@
   "changeScope": "Offline consumer helper, behavioral tests and sample documentation; listing fields retain September 30 observations",
   "runtimeChanged": false,
   "schemasChanged": false,
-  "examplesRegenerated": true,
+  "examplesRegenerated": false,
   "sampleWorkflow": {
     "name": "safe-job-board-handoff",
     "checkedAt": "2026-09-30T21:16:07.107Z",
@@ -49,6 +49,5 @@
     "freshSourceAccessVerified": false,
     "customerImpactVerified": false
   },
-  "sampleUpdatedOn": "2026-10-02",
-  "actorRunExamplesRegenerated": false
+  "sampleUpdatedOn": "2026-10-02"
 }
