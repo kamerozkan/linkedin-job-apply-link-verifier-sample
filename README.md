@@ -20,7 +20,7 @@ does not require LinkedIn cookies, credentials, or a browser profile.
 
 The handoff documentation release `0.0.22` was checked with the same genuine input: two useful and publishable decisions, two unbillable diagnostic rows, and two charged events. It changes only the Actor README. [New release verification](workflow-release-2026-09-30.json).
 
-Run a small collected-job batch first, publish only rows with `safeToPublish: true`, and keep ambiguous or invalid rows in your review queue. See [the two genuine jobs plus duplicate/invalid input](05_current_billing_validation_input.json), [all four exported records](05_current_billing_validation_output.json) and [the run summary](05_current_billing_validation_summary.json).
+Run a small collected-job batch first. Only consider publishing rows with `safeToPublish: true`, `reviewRequired: false`, a supported publishable status and a job-specific public HTTPS `actionUrl`; inspect `checkedAt` and keep ambiguous or invalid rows in your review queue. See [the two genuine jobs plus duplicate/invalid input](05_current_billing_validation_input.json), [all four exported records](05_current_billing_validation_output.json) and [the run summary](05_current_billing_validation_summary.json).
 
 On September 30, 2026, owner run `C0quAeIt8R4A3OvZw` on build `0.0.21` returned one `ACTIVE` route and one `LINKEDIN_EASY_APPLY` route. The duplicate and invalid records were unbillable, and exactly two useful decisions were charged. The optional report was stored and unpriced. These are dated public-source test results, not realized revenue or a guarantee for other employers.
 
@@ -32,6 +32,16 @@ python3 analyze_run.py --run run-export.json --rows dataset-export.json \
 ```
 
 `0.0045` is an explicit hypothetical price matching the checked BRONZE event price on September 30, 2026; replace it after checking live pricing. The helper rejects conflicting useful/charge counters and unsafe publication flags. It separates observed owner usage from hypothetical paid contribution, and leaves realized customer revenue unknown. `OUTPUT.rows` can exclude invalid/duplicate diagnostic records, so use the complete dataset count. Only Apify Insights or payout evidence establishes account revenue. [Apify pricing and cost calculation](https://docs.apify.com/actors/publishing/monetize/pricing-and-costs).
+
+## Offline consumer audit fixes on October 2, 2026
+
+The updated [run audit helper](analyze_run.py) validates the complete saved dataset, OUTPUT and run metadata together. It rejects conflicting counters, invalid dates or job identity, unsafe publication URLs, and inconsistent billing modes. `payPerEventActive` must be a real boolean; an inactive mode can legitimately deliver useful decisions with zero event charges.
+
+`requestedBatchFullyDelivered` and `inputRowsWithoutDecision` show whether all requested inputs received decisions. `exportedDatasetMatchesOutput` separately checks that the saved export contains every delivered row. A legitimate cap can leave a complete export with incomplete input coverage. Dataset usefulness percentages use delivered rows as their denominator, never all requested inputs.
+
+A publication candidate needs `safeToPublish: true`, `reviewRequired: false`, a supported publishable status and a syntactically public HTTPS route. Easy Apply must identify the same job. These local checks do not resolve DNS, follow redirects or recheck availability. For a joined new-job feed, use the linked Jobs helper, which additionally requires the exact saved Verifier input. Neither helper proves that arbitrary local exports came from Apify.
+
+All **29 regression tests** passed, with independent probes and replay of the existing September 30 owner exports on builds `0.0.21` and `0.0.22`. Each dated replay retained two useful and publishable decisions and two unbillable diagnostic rows; no fresh Actor run was started. [Dated audit proof](qa-verification-2026-10-02.json).
 
 ## Verify a new-job feed without repeating old inputs
 
@@ -51,8 +61,9 @@ After one verification run you choose to start, the helper checks its exact save
 | Evidence is insufficient | `AMBIGUOUS`, no publishable URL |
 | LinkedIn Easy Apply job | `LINKEDIN_EASY_APPLY` with the LinkedIn route |
 
-The release rule is simple: use `actionUrl` only when `safeToPublish` is
-`true`.
+Before releasing a route, require `safeToPublish: true`, `reviewRequired: false`,
+a supported publishable status and a job-specific public HTTPS `actionUrl`.
+Inspect `checkedAt`; the recorded decision is not a permanent availability guarantee.
 
 ## Measured public example
 
@@ -296,7 +307,7 @@ Original documentation and schemas in this repository are available under the
 
 ## Verified repair: 25 September 2026
 
-Build `0.0.21` (`WCeepAHlOQCnMdBGV`) is published as `latest`. The expired maintenance stop was removed. The repaired Actor delivered two useful, publishable decisions from two public job rows in a 23-second cloud run. The optional JSON, HTML and text reports were stored successfully and were uncharged because no report event is currently priced.
+On September 25, build `0.0.21` (`WCeepAHlOQCnMdBGV`) was published as `latest`. The latest build observed on October 2 is `0.0.22`. The expired maintenance stop was removed. The repaired Actor delivered two useful, publishable decisions from two public job rows in a 23-second cloud run. The optional JSON, HTML and text reports were stored successfully and were uncharged because no report event is currently priced.
 
 - [Verification run](https://console.apify.com/actors/TW4QDjkomVJH1SPsd/runs/oeZDXtklRSve9DR5g)
 - [Runnable input](04_live_repair_input.json)
@@ -306,6 +317,6 @@ Build `0.0.21` (`WCeepAHlOQCnMdBGV`) is published as `latest`. The expired maint
 
 The expired 10-job maintenance cap was removed. The API default ceiling and maximum are 500 jobs; the Console prefill is 10. Search-query, candidate-page and bridge-page settings are now honored; conservative defaults are 1, 1 and 0. Start with a small batch because cold employers and public-source failures can make verification slow. A larger batch may require more time.
 
-The current FREE-tier rate is $0.005 per useful decision, with plan discounts. AMBIGUOUS, INVALID_INPUT and DUPLICATE_INPUT rows are uncharged; the optional report is currently included. Current live pricing in the Apify Console remains authoritative.
+The FREE-tier rate checked for the September repair was $0.005 per useful decision, with plan discounts. AMBIGUOUS, INVALID_INPUT and DUPLICATE_INPUT rows are uncharged; the optional report is currently included. Current live pricing in the Apify Console remains authoritative.
 
-These two checked jobs are dated evidence, not a promise of universal accuracy, availability, speed or profitability. Do not equate a successful run with an actionable URL: only publish routes with safeToPublish=true, and inspect reviewRequired, evidence and checkedAt.
+These two checked jobs are dated evidence, not a promise of universal accuracy, availability, speed or profitability. Do not equate a successful run with an actionable URL: require safeToPublish=true and reviewRequired=false, then inspect actionUrl, status, evidence and checkedAt.

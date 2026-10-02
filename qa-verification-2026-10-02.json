@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-02",
+  "scope": "Offline customer report and billing consumer helpers only",
+  "newCloudRuns": 0,
+  "actorRuntimeChanges": false,
+  "pricingChanges": false,
+  "externalMessagesSent": 0,
+  "customerImpactVerified": false,
+  "sourceRunAuthenticityVerifiedByThisAudit": false,
+  "localTestsPassed": 29,
+  "fixes": [
+    "Public HTTPS publication syntax and job identity checks",
+    "Run chronology and complete saved dataset validation",
+    "Useful, diagnostic, request and charge counter agreement",
+    "Strict pay-per-event mode with inactive billing support",
+    "Requested input coverage separate from complete saved export"
+  ],
+  "changedSourceFiles": [
+    {
+      "repo": "linkedin-job-apply-link-verifier-sample",
+      "path": "analyze_run.py",
+      "sha256": "e0b883f1708b21ab42e70b01a0000629ad3b710f089a385cb64ad99d81856b2b"
+    },
+    {
+      "repo": "linkedin-job-apply-link-verifier-sample",
+      "path": "test_analyze_run.py",
+      "sha256": "8476067a2550478268e051fb34eb89b61311bcda6db10cd4fce02fb8be1e09fd"
+    }
+  ],
+  "datedRealReplays": [
+    {
+      "source": "dated September 30 owner exports",
+      "runId": "C0quAeIt8R4A3OvZw",
+      "buildNumber": "0.0.21",
+      "datasetRows": 4,
+      "usefulDecisions": 2,
+      "publishableDecisions": 2,
+      "diagnosticRows": 2,
+      "chargedUsefulEvents": 2,
+      "payPerEventActive": true,
+      "requests": 8,
+      "rowRequestAccountingVerified": true,
+      "requestedRows": 4,
+      "deliveredRows": 4,
+      "inputRowsWithoutDecision": 0,
+      "requestedBatchFullyDelivered": true,
+      "freshCloudRun": false
+    },
+    {
+      "source": "dated September 30 owner exports",
+      "runId": "Sd6IAPRBA8tp6VUh5",
+      "buildNumber": "0.0.22",
+      "datasetRows": 4,
+      "usefulDecisions": 2,
+      "publishableDecisions": 2,
+      "diagnosticRows": 2,
+      "chargedUsefulEvents": 2,
+      "payPerEventActive": true,
+      "requests": 8,
+      "rowRequestAccountingVerified": true,
+      "requestedRows": 4,
+      "deliveredRows": 4,
+      "inputRowsWithoutDecision": 0,
+      "requestedBatchFullyDelivered": true,
+      "freshCloudRun": false
+    }
+  ],
+  "independentFocusedProbes": "PASS; separate from regression suite",
+  "publicationScope": "Local consumer helper and sample documentation; no deployed Actor change"
+}

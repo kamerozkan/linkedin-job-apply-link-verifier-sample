@@ -8,10 +8,10 @@
   "isPublic": true,
   "url": "https://apify.com/kamerozkan/linkedin-job-apply-link-verifier",
   "checkedAt": "2026-09-30",
-  "changeScope": "listing metadata and sample documentation only",
+  "changeScope": "Offline consumer helper, behavioral tests and sample documentation; listing fields retain September 30 observations",
   "runtimeChanged": false,
   "schemasChanged": false,
-  "examplesRegenerated": false,
+  "examplesRegenerated": true,
   "sampleWorkflow": {
     "name": "safe-job-board-handoff",
     "checkedAt": "2026-09-30T21:16:07.107Z",
@@ -30,5 +30,25 @@
     "publishesExternally": false,
     "actorRuntimeChanged": false,
     "actorPricingChanged": false
-  }
+  },
+  "consumerDeepQa": {
+    "addedOn": "2026-10-02",
+    "helper": "analyze_run.py",
+    "proof": "qa-verification-2026-10-02.json",
+    "localTestsPassed": 29,
+    "fixes": [
+      "Public HTTPS publication syntax and job identity checks",
+      "Run chronology and complete saved dataset validation",
+      "Useful, diagnostic, request and charge counter agreement",
+      "Strict pay-per-event mode with inactive billing support",
+      "Requested input coverage separate from complete saved export"
+    ],
+    "mode": "offline saved-export validation",
+    "actorRuntimeChanged": false,
+    "actorPricingChanged": false,
+    "freshSourceAccessVerified": false,
+    "customerImpactVerified": false
+  },
+  "sampleUpdatedOn": "2026-10-02",
+  "actorRunExamplesRegenerated": false
 }

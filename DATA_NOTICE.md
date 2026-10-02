@@ -27,3 +27,7 @@ Files prefixed `05_` and `verification-2026-09-30.json` contain two public jobs 
 ## New-job feed handoff documentation on October 1, 2026
 
 This repository links to a separate local helper in the Jobs sample. The helper prepares only READY new-job artifacts and requires matching saved verification input before joining exported decisions. It performs no network access, Actor invocation, billing or external publication. Full job content and review queues should remain private. The linked demonstration is wholly synthetic and separate from dated real source replay observations. A newly matched live end-to-end run has not been verified; existing Actor runtime, schemas, prices and earlier public outputs are unchanged.
+
+## Offline audit repair on October 2, 2026
+
+`analyze_run.py` and its behavioral tests were corrected without changing the Actor runtime, schemas, pricing or recorded source outputs. The public proof contains file hashes and aggregate observations from previously dated owner examples. Local URL syntax checks do not establish current availability, redirect safety or source authenticity. Export completeness and requested-input coverage are different measures. Useful decisions can be uncharged when pay-per-event mode is inactive. Customer revenue, adoption and profit are not inferred from these replays.
